@@ -1,0 +1,43 @@
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block: 4rem;
+}
+
+#blog-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    font-family: "Titillium Web", sans-serif;
+}
+
+#blog-content {
+    border: none;
+    outline: none;
+    resize: none;
+    padding: 1em;
+    font-size: 1.8rem;
+    font-family: "Titillium Web", sans-serif;
+}
+
+#submit-btn {
+    align-self: center;
+    padding-block: 0.5em;
+    padding-inline: 0.8em;
+    background-color: black;
+    border-radius: 0.2em;
+    color: white;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    transition: all 0.1s ease-in;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    transform: scale(1.05);
+}
