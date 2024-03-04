@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/changeblog.css">
+    <title>Edit</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/"><img src="/arrow.png" alt=""></a>
+        </nav>
+    </header>
+    <main>
+        <form action="/blogs/edit/<%= bid %>" method="post">
+            <input id="blog-title" type="text" name="title" value="<%= title %>">
+            <textarea id="blog-content" name="content" cols="30" rows="10"><%= content %></textarea>
+            <button id="submit-btn" type="submit">Confirm</button>
+        </form>
+    </main>
+</body>
+</html>

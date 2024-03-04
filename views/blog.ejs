@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/base.css">
+    <link rel="stylesheet" href="/blog.css">
+    <title>Blog</title>
+</head>
+<body>
+    <header>
+        <a href="/"><img src="/arrow.png" alt=""></a>
+        <h1><%= title %></h1>
+        <div id="edit-links">
+            <a href="/blogs/edit/<%= bid %>"><img src="/edit.png" alt=""></a>
+            <a href="/blogs/delete/<%= bid %>"><img src="/delete.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <%= content %>
+    </main>
+</body>
+</html>
